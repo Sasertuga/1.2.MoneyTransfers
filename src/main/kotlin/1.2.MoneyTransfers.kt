@@ -5,7 +5,7 @@ fun main() {
     val input = readLine()?.toInt() ?: return
     val amount = if (input !== 0 && input > 0) input * 100 else return
     val commissionForTransfer = (amount * COMMISSION / 100).toInt()
-    val lol = if (commissionForTransfer < 3500 ) 35 * 100 else commissionForTransfer
+    val verification = if (commissionForTransfer < 35) 3500 else commissionForTransfer
 
-    print("Комиссия за перевод: $lol копеек")
+    println("Комиссия за перевод: $verification копеек")
 }
